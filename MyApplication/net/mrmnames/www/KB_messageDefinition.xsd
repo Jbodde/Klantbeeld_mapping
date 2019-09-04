@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.mrmnames.net" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:tns="http://www.mrmnames.net">
+  <xsd:complexType name="NAW">
+    <xsd:sequence>
+            <xsd:element name="naam" type="xsd:string"/>
+            <xsd:element name="telefoon" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element ibmSchExtn:docRoot="true" name="inputMsg" type="tns:input">
+  </xsd:element>
+  <xsd:complexType name="N.A.W.">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="phone" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element ibmSchExtn:docRoot="true" name="outputMsg" type="tns:output">
+  </xsd:element>
+    <xsd:complexType name="Salary">
+    <xsd:sequence>
+      <xsd:element name="salary" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:complexType name="Salaris">
+    <xsd:sequence>
+      <xsd:element name="salaris" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+    <xsd:complexType name="input">
+    <xsd:sequence>
+      <xsd:element ref="tns:NAW"/>
+      <xsd:element ref="tns:Salaris"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:complexType name="output">
+    <xsd:sequence>
+      <xsd:element ref="tns:N.A.W."/>
+      <xsd:element ref="tns:Salary"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:element name="NAW" type="tns:NAW">
+  </xsd:element>
+    <xsd:element name="Salaris" type="tns:Salaris">
+  </xsd:element>
+    <xsd:element name="N.A.W." type="tns:N.A.W.">
+  </xsd:element>
+    <xsd:element name="Salary" type="tns:Salary">
+  </xsd:element>
+    <xsd:complexType name="error">
+    <xsd:sequence>
+      <xsd:element name="ermsg" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:complexType name="complexType">
+    <xsd:sequence/>
+  </xsd:complexType>
+    <xsd:element ibmSchExtn:docRoot="true" name="errorMsg" type="tns:error">
+  </xsd:element>
+</xsd:schema>

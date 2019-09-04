@@ -1,0 +1,23 @@
+
+
+Importing file: C:\Users\JBODDE90\IBM\IIBT10\workspace\KB_NAMESPACE\kb_messageSet\kb_messageSetService.wsdl
+
+Copying source WSDL kb_messageSetService.wsdl to kb_messageSetService.wsdl.
+The WSDL import will proceed with bindings kb_messageSetSOAP_HTTP_Binding.
+Creating wsdl schema document for file:///C:/Users/JBODDE90/IBM/IIBT10/workspace/KB_NAMESPACE/kb_messageSet/kb_messageSetService.wsdl.
+Parsing wsdl binding {http://tempuri.org/kb_messageSet}kb_messageSetSOAP_HTTP_Binding.
+Parsing wsdl binding input Operation1.
+Parsing wsdl binding output Operation1.
+Parsing wsdl binding fault Operation1_Fault.
+Processing doc style for operation Operation1.
+Populating WSDL schema kb_messageSetService.xsd.
+Creating file kb_messageSetService.xsd in the workspace.
+Creating file /MyApplication/MyApplication/net/mrmnames/www/KB_messageDefinition.xsd in the workspace.
+
+Elapsed time processing this message definition file: 0.263 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+
